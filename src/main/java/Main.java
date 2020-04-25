@@ -1,5 +1,6 @@
 import Model.Book;
 import Model.Library;
+import Model.LibraryException;
 
 import java.util.Scanner;
 
@@ -27,7 +28,14 @@ public class Main {
                     System.out.println("[Dodaj książkę] jeszcze nie zaimplementowana/e");
                     break;
                 case 3:
-                    System.out.println("[Usuń książkę] jeszcze nie zaimplementowana/e");
+                    System.out.println("[Usuń książkę] podaj id");
+                    long usunID =SCANNER.nextLong();
+                    try {
+                        library.deleteBookById(usunID);
+                        System.out.println("udalo sie usunąć");
+                    } catch (LibraryException libraryException) {
+                        System.out.println(libraryException.getMessage());
+                    }
                     break;
                 default:
                     System.out.println("błędne dane");
