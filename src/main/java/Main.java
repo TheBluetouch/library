@@ -21,6 +21,7 @@ public class Main {
             switch (wybor) {
                 case 1:
                     System.out.println("[Wyświetl wszystkie książki] jeszcze nie zaimplementowana/e");
+                    library.printAllBooks();
                     break;
                 case 2:
                     System.out.println("[Dodaj książkę] jeszcze nie zaimplementowana/e");

@@ -35,10 +35,10 @@ public class Book {
 
     @Override
     public String toString() {
-        return  "\n\nid=" + id +
-                "\nauthor='" + author +
-                "\ntitle='" + title +
-                "\nisbn='" + isbn;
+        return  "\n\nid= " + id +
+                "\nauthor= " + author +
+                "\ntitle= " + title +
+                "\nisbn= " + isbn +"\n";
     }
 }
 
